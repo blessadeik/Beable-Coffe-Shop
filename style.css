@@ -1,0 +1,369 @@
+/* Styling for coffee shop */
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital@1&display=swap');
+
+:root{
+    --primary-color:#810000;
+    --secondary-color:#6a0101;
+    --dark-color:#290101;
+    --light-color:#fadcdc;
+}
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    font-family:'Lato', sans-serif;
+    color: rgb(98, 98, 100);
+    margin: auto;
+    line-height: 1.5;
+}
+
+ul{
+    list-style-type: none;
+}
+
+li{
+    padding: 10px;
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+a{
+    text-decoration:none;
+    color:blue;
+}
+
+h1,h2{
+    font-weight:300;
+    line-height: 1.2;
+    margin: 10px 0;
+}
+
+p{
+    margin: 10px 0;
+}
+
+img{
+    width: 100%;
+}
+
+.navbar{
+    background-color: var(--primary-color);
+    color: #fff;
+    height: 70px;
+}
+
+.navbar .flex{
+    justify-content: space-between;
+}
+
+.navbar ul{
+    display: flex;
+}
+
+.navbar a{
+    color: white;
+    padding: 10px;
+    margin:0 5px;
+}
+
+.navbar a:hover{
+    border-bottom: 2px #fff solid;
+    border-right: 3px #fff solid;
+}
+
+/* Showcase */
+.showcase{
+    height: 420px;
+    background-color:var(--primary-color);
+    color: #fff;
+    position: relative;
+}
+
+.showcase h1{
+    font-size:40px;
+}
+
+.showcase p{
+    margin: 20px 0;
+}
+
+.showcase .grid{
+    grid-template-columns: 55% 45%;
+    gap:40px;
+    overflow: visible;
+}
+
+.showcase-text a{
+    text-decoration:none;
+    color: #fff;
+    font-weight: bold;
+    padding: 4px;
+    border-right: 3px solid #fff;
+}
+
+.showcase-text a:hover{
+    border-bottom: 2px solid #fff;
+}
+.showcase-form{
+    position:relative;
+    top: 60px;
+    height: 400px;
+    width: 450px;
+    padding:40px;
+    z-index:100%;
+    justify-self:flex-end;
+}
+
+.showcase-form h2{
+    text-align: center;
+    font-weight: bold;
+}
+
+.showcase-form .form-control{
+    margin:30px 0;
+}
+
+.showcase-form input[type="text"],
+.showcase-form input[type="email"]{
+    border:0;
+    border-bottom: 1px solid #810000;
+    width: 75%;
+    padding: 4px;
+    font-size:1rem ;
+}
+
+.showcase-form input[type="text"]:focus,
+.showcase-form input[type="email"]:focus {
+    border:0;
+    border-right:3px solid #810000;
+    border-bottom:3px solid #810000;
+}
+
+.showcase-form input[type="date"],
+.showcase-form input[type="time"]{
+    border: 0;
+    border-bottom: 1px solid #810000;
+    border-right: 4px solid #810000;
+    width: 80%;
+    padding:3px;
+}
+
+.showcase-form input[type="submit"]{
+    border: 2px solid #810000;
+    border-radius: 8px;
+    background-color: var(--primary-color);
+    color: #fff;
+    font-weight: bold;
+    padding:8px;
+}
+
+.showcase-form input[type="submit"]:hover{
+    cursor:pointer;
+    transform:scale(1.05)
+}
+
+.showcase-form input:focus{
+    outline:none;
+}
+
+.showcase::before{
+    content:'';
+    position:absolute;
+    height: 100px;
+    bottom: -75px;
+    right:0;
+    left: 0;
+    background:#fff;
+    transform: skewY(-3deg);
+    -webkit-transform: skewY(-3deg);
+    -moz-transform: skewY(-3deg);
+    -ms-transform: skewY(-3deg);
+}
+
+/* Stats */
+.stats{
+    padding-top: 100px;
+}
+
+.stats-heading{
+    margin: auto;
+}
+
+.stats .grid h3{
+    font-size:35px;
+}
+
+.stats .grid p{
+    font-size: 20px;
+}
+
+/* Cli */
+
+.cli .grid{
+    grid-template-columns:repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+}
+
+.cli .grid >*:first-child{
+    grid-column: 1 / span 2;
+    grid-row:1 / span 2;
+}
+
+
+
+/* Serve */
+.serve{
+    background-color: var(--primary-color);
+    padding:100px;
+    color: #fff;
+}
+
+.serve .grid {
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.serve a{
+    text-decoration:none;
+    color: #fff;
+    font-weight: bold;
+    padding: 4px;
+    border-right: 3px solid #fff;
+}
+
+.serve a:hover{
+    border-bottom: 2px solid #fff;
+}
+
+/* Form */
+
+label{
+    font-weight:bold;
+    font-size:1.2rem;
+    padding: 10px;
+}
+
+/* Utilities */
+.container{
+    max-width: 1240px;
+    margin: 0 auto;
+    overflow: auto;
+    padding: 0 40px;
+}
+
+.card{
+    background:#fff;
+    border-radius: 10px;
+    box-shadow: 0 3px 10px rgba(0,0,0, 0.2);
+    padding:20px;
+    margin: 10px;
+    color: #810000;
+
+}
+
+.text-center{
+    text-align: center;
+}
+.lg{
+    font-size:2.5rem;
+    font-weight: bold;
+}
+
+.lead{
+
+}
+
+.flex{
+    display: flex;
+    justify-content:center;
+    align-items:center;
+    height: 100%;
+}
+
+.grid{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap:30px;
+    justify-content:center;
+    align-items:center;
+    height:100%;
+}
+
+.grid-3{
+    grid-template-columns:repeat(3, 1fr);
+}
+
+
+
+/* Margin top-bottom*/
+.my-1{
+    margin: 1rem 0;
+}
+
+.my-2{
+    margin: 1.5rem 0;
+}
+.my-3{
+    margin: 2rem 0;
+}
+.my-4{
+    margin: 2.5rem 0;
+}
+.my-5{
+    margin: 3rem 0;
+}
+/*Margin all-around */
+.m-1{
+    margin: 1rem;
+}
+
+.m-2{
+    margin: 1.5rem;
+}
+.m-3{
+    margin: 2rem;
+}
+.m-4{
+    margin: 2.5rem;
+}
+.m-5{
+    margin: 3rem;
+}
+
+/* Padding top-bottom*/
+.py-1{
+    margin: 1rem 0;
+}
+
+.py-2{
+    margin: 1.5rem 0;
+}
+.py-3{
+    margin: 2rem 0;
+}
+.py-4{
+    margin: 2.5rem 0;
+}
+.py-5{
+    margin: 3rem 0;
+}
+/*Padding all-around */
+.p-1{
+    margin: 1rem;
+}
+
+.p-2{
+    margin: 1.5rem;
+}
+.p-3{
+    margin: 2rem;
+}
+.p-4{
+    margin: 2.5rem;
+}
+.p-5{
+    margin: 3rem;
+}
