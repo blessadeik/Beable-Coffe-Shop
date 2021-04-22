@@ -92,7 +92,7 @@ img{
 }
 
 .showcase .grid{
-    grid-template-columns: 45% 55%;
+    grid-template-columns: 40% 60%;
     gap:40px;
     overflow: visible;
 }
@@ -223,8 +223,9 @@ img{
 }
 
 .serve .grid {
-    grid-template-columns: repeat(2, 1fr);
-}
+    grid-template-columns: 40% 60%;
+    gap:40px;
+    overflow: visible;}
 
 .serve a{
     text-decoration:none;
