@@ -248,7 +248,7 @@ label{
 
 /* Utilities */
 .container{
-    max-width: 1240px;
+    max-width: 80%;
     margin: 0 auto;
     overflow: auto;
     padding: 0 40px;
@@ -264,15 +264,46 @@ label{
 
 }
 
+.bg-primary, .btn-primary{
+    background-color: var(--primary-color);
+    color: #fff;
+}
+.bg-secondary, .btn-secondary{
+    background-color: var(--secondary-color);
+    color: #fff;
+}
+.bg-dark, .btn-dark{
+    background-color: var(--dark-color);
+    color: #fff;
+}
+.bg-light, .btn-light{
+    background-color: var(--light-color);
+    color: #000;
+}
+
 .text-center{
     text-align: center;
 }
+
+/* Text sizes */
+.xl{
+    font-size:4rem;
+}
 .lg{
-    font-size:2.5rem;
+    font-size:3rem;
     font-weight: bold;
 }
 
+.md{
+    font-size:2rem;
+}
+
+.sm{
+    font-size:1rem;
+}
+
 .lead{
+    font-size:20px;
 
 }
 
