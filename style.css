@@ -239,9 +239,17 @@ img{
     border-bottom: 2px solid #fff;
 }
 
+/* Payment */
+
+.payment .flex{
+    flex-wrap: wrap;
+}
 .payment .card{
+    text-align: center;
+    margin: 18px 10px 40px;
+    height:140px;
+    display: inline-block;
     width: 20%;
-    height: 140px;
 }
 
 .payment img{
