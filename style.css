@@ -239,6 +239,12 @@ img{
     border-bottom: 2px solid #fff;
 }
 
+
+.payment img{
+    width: 100px;
+    height: 80px;
+}
+
 /* Form */
 
 label{
@@ -296,6 +302,7 @@ label{
 }
 
 .md{
+    font-weight: bold;
     font-size:2rem;
 }
 
