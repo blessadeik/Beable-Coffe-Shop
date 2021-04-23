@@ -256,6 +256,7 @@ img{
 .payment h2{
     color: black;
     font-weight: bold;
+    padding-bottom: 20px;
 }
 
 .payment img{
@@ -485,7 +486,43 @@ footer{
     background-color: var(--primary-color);
     color: #fff;
     font-weight: bold;
-    font-size:1.1em;
+    font-size:1em;
     padding: 10px;
     text-align:center;
+}
+
+/* Tablets and under */
+
+@media(max-width:768px){
+    .grid,
+    .showcase .grid,
+    .stats .grid,
+    .cli .grid,
+    .serve .grid{
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+    }
+
+    .showcase{
+        height:auto;
+    }
+
+    .showcase-text{
+        text-align: center;
+        margin:40px;
+    }
+}
+
+/* Mobile */
+@media (max-width:500px){
+    .navbar{
+        height:110px
+    }
+    .navbar .flex{
+        flex-direction: columnn;
+    }
+    .navbar ul{
+        padding: 10px;
+        background-color:rgba(0,0,0, 0.1);
+    }
 }
