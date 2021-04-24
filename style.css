@@ -111,8 +111,8 @@ img{
 .showcase-form{
     position:relative;
     top: 60px;
-    height: 400px;
-    width: 450px;
+    height: fit-content;
+    width: 100%;
     padding:40px;
     z-index:100%;
     justify-self:flex-end;
@@ -509,18 +509,27 @@ footer{
 
     .showcase-text{
         text-align: center;
-        margin:40px;
+        margin:20px;
+    }
+    .showcase-form{
+        margin: auto;
+        justify-self: center;
+    }
+    .cli .grid >*:first-child{
+        grid-column: 1;
+        grid-row:1;
     }
 }
+
 
 /* Mobile */
 @media (max-width:500px){
     .navbar{
-        height:110px
+        height:fit-content;
     }
     .navbar .flex{
-        flex-direction: columnn;
-    }
+        flex-direction: column;
+}
     .navbar ul{
         padding: 10px;
         background-color:rgba(0,0,0, 0.1);
