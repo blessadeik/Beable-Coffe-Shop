@@ -299,7 +299,7 @@ select:focus{
     border-radius:10px;
     box-shadow: 0 3px 10px rgba(0,0,0,0.2);
     padding: 6px;
-    margin: 10px;
+    margin: 5px;
     max-width: fit-content;
 }
 
@@ -314,6 +314,14 @@ select:focus{
     align-items:center;
 }
 
+.connect .grid{
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 5px;
+    justify-content: center;
+    align-items: center;
+}
 .connect h2{
     font-weight: bold;
     color: #810000;
