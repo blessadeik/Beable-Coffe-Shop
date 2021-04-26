@@ -85,10 +85,12 @@ img{
 
 .showcase h1{
     font-size:40px;
+    font-weight: bold;
 }
 
 .showcase p{
     margin: 20px 0;
+    padding-bottom: 5px;
 }
 
 .showcase .grid{
@@ -102,6 +104,8 @@ img{
     text-align: center;
     padding-bottom: 30px;
 }
+
+
 
 .showcase-text a{
     text-decoration:none;
@@ -118,7 +122,7 @@ img{
     position:relative;
     top: 60px;
     height: fit-content;
-    width: 80%;
+    width: 100%;
     padding:40px;
     z-index:100%;
     justify-self:flex-end;
@@ -412,6 +416,7 @@ select:focus{
 .testimonies p{
     font-size: 0.75rem;
     align-self: center;
+    padding-left: 6px;
 }
 .testimonies .grid5{
     display: grid;
@@ -655,7 +660,7 @@ footer{
 
 
 /* Mobile */
-@media (max-width:500px){
+@media (max-width:550px){
     .navbar{
         height:fit-content;
     }
@@ -669,6 +674,13 @@ footer{
 
     .coffee .grid4{
         grid-template-columns: repeat(2, 1fr);
+    }
+
+    .coffee .card{
+        width: 100%;
+        height:400px;
+        padding: 10px;
+        align-self: center;
     }
     .testimonies .grid5{
         grid-template-columns: repeat(1, 1fr);
