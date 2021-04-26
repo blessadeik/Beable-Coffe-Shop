@@ -664,6 +664,9 @@ footer{
     .testimonies .grid5{
         grid-template-columns: repeat(1, 1fr);
     }
+    .connect .grid{
+        grid-template-columns:repeat(4, 1fr);
+    }
 }
 
 
@@ -689,6 +692,9 @@ footer{
         height:300px;
         padding: 10px;
         align-self: center;
+    }
+    .connect .grid{
+        grid-template-columns: repeat(2, 1fr);
     }
     .testimonies .grid5{
         grid-template-columns: repeat(1, 1fr);
