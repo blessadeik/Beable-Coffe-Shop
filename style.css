@@ -239,8 +239,9 @@ select:focus{
     margin: auto;
 }
 
-.cli-grid2 h3{
+.cli-grid2 p{
     text-align: center;
+    font-weight: bold;
 }
 
 /* .cli .grid >*:first-child{
@@ -329,7 +330,7 @@ select:focus{
 }
 
 .connect-grid{
-    width:60%;
+    width:80%;
     overflow:hidden;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
