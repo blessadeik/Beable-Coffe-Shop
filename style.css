@@ -94,7 +94,7 @@ img{
 }
 
 .showcase .grid{
-    grid-template-columns: 40% 60%;
+    grid-template-columns: 60% 40%;
     gap:40px;
     overflow: visible;
 }
@@ -120,10 +120,10 @@ img{
 }
 .showcase-form{
     position:relative;
-    top: 60px;
+    top: 30px;
     height: fit-content;
     width: 100%;
-    padding:40px;
+    padding:20px;
     z-index:100%;
     justify-self:flex-end;
 }
@@ -227,14 +227,28 @@ select:focus{
 /* Cli */
 
 .cli .grid{
-    grid-template-columns:repeat(3, 1fr);
-    grid-template-rows: repeat(2, 1fr);
+    grid-template-columns:repeat(1, 1fr);
+    width: 60%;
+    column-gap: 0px;
+    row-gap: 0px;
 }
 
-.cli .grid >*:first-child{
+.cli-grid2{
+    display: grid;
+    grid-template-columns:repeat(2, 1fr);
+    width: 90%;
+    text-align:;
+    margin: auto;
+}
+
+.cli-grid2 h3{
+    text-align: center;
+}
+
+/* .cli .grid >*:first-child{
     grid-column: 1 / span 2;
     grid-row:1 / span 2;
-}
+} */
 
 
 
@@ -299,7 +313,7 @@ select:focus{
     border-radius:10px;
     box-shadow: 0 3px 10px rgba(0,0,0,0.2);
     padding: 6px;
-    margin: 5px;
+    /* margin: 5px; */
     max-width: fit-content;
 }
 
@@ -314,13 +328,11 @@ select:focus{
     align-items:center;
 }
 
-.connect .grid{
+.connect-grid{
     margin: auto;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    gap: 5px;
-    justify-content: center;
-    align-items: center;
+    grid-gap: 0px;
 }
 .connect h2{
     font-weight: bold;
@@ -457,18 +469,17 @@ label{
 
 /* Utilities */
 .container{
-    max-width: 80%;
+    max-width: 95%;
     margin: 0 auto;
     overflow: auto;
-    padding: 0 40px;
 }
 
 .card{
     background:#fff;
     border-radius: 10px;
     box-shadow: 0 3px 10px rgba(0,0,0, 0.2);
-    padding:20px;
-    margin: 10px;
+    padding:8px;
+    margin: 5px;
     color: #810000;
 
 }
@@ -477,7 +488,7 @@ label{
     background:#fff;
     border-radius: 10px;
     box-shadow: 0 8px 4px rgba(0,0,0, 0.2);
-    padding:10px;
+    padding:8px;
     margin: 5px;
     color: #810000;
 }
