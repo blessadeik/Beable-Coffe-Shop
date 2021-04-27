@@ -48,6 +48,7 @@ p{
 
 img{
     width: 100%;
+    border-radius: 5px;
 }
 
 .navbar{
@@ -104,8 +105,6 @@ img{
     text-align: center;
     padding-bottom: 30px;
 }
-
-
 
 .showcase-text a{
     text-decoration:none;
@@ -237,7 +236,6 @@ select:focus{
     display: grid;
     grid-template-columns:repeat(2, 1fr);
     width: 90%;
-    text-align:;
     margin: auto;
 }
 
@@ -305,7 +303,9 @@ select:focus{
 /* Connect */
 
 .connect{
+    margin: auto;
     padding: 100px;
+    /* width: 60%; */
 }
 
 .connect .social{
@@ -329,12 +329,14 @@ select:focus{
 }
 
 .connect-grid{
-    margin: auto;
+    width:60%;
+    overflow:hidden;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    grid-gap: 0px;
+    align-items:center;
 }
 .connect h2{
+    text-align:center;
     font-weight: bold;
     color: #810000;
 }
@@ -395,17 +397,17 @@ select:focus{
 }
 
 .coffee .grid4{
+    overflow: hidden;
     margin: auto;
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap:10px;
+    grid-template-columns: repeat(3, 1fr);
+    gap:6px;
     justify-content:center;
     align-items:center;
 }
 
 .coffee-meet{
-    padding-left: 6%;
-    padding-right: 6%;
+    justify-content:center;
 }
 .coffee-main{
     font-size: 1.8rem;
@@ -471,7 +473,7 @@ label{
 .container{
     max-width: 95%;
     margin: 0 auto;
-    overflow: auto;
+    overflow: hidden;
 }
 
 .card{
@@ -664,19 +666,20 @@ footer{
         margin: auto;
         justify-self: center;
     }
-    .cli .grid >*:first-child{
+    /* .cli .grid >*:first-child{
         grid-column: 1;
         grid-row:1;
-    }
+    } */
 
     .coffee .grid4{
-        grid-template-columns: repeat(3, 1fr);
+        grid-template-columns: repeat(2, 1fr);
     }
     .testimonies .grid5{
         grid-template-columns: repeat(1, 1fr);
     }
-    .connect .grid{
-        grid-template-columns:repeat(4, 1fr);
+    .connect-grid{
+        grid-template-columns:repeat(2, 1fr);
+        gap: 10px;
     }
 }
 
@@ -695,7 +698,7 @@ footer{
     }
 
     .coffee .grid4{
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: repeat(1, 1fr);
     }
 
     .coffee .card{
