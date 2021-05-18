@@ -17,7 +17,6 @@
 body{
     font-family:'Lato', sans-serif;
     color: rgb(98, 98, 100);
-    margin: auto;
     line-height: 1.5;
 }
 
@@ -305,7 +304,8 @@ select:focus{
 
 .connect{
     margin: auto;
-    padding: 100px;
+    padding-top: 20vh;
+    padding-bottom: 20vh;
     /* width: 60%; */
 }
 
@@ -313,8 +313,7 @@ select:focus{
     background-color: white;
     border-radius:10px;
     box-shadow: 0 3px 10px rgba(0,0,0,0.2);
-    padding: 6px;
-    /* margin: 5px; */
+    padding: 10px;
     max-width: fit-content;
 }
 
@@ -329,12 +328,12 @@ select:focus{
     align-items:center;
 }
 
-.connect-grid{
-    width:80%;
-    overflow:hidden;
+.gridconnect{
+    margin:auto;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    align-items:center;
+    gap:10px;
+    width:100%;
 }
 .connect h2{
     text-align:center;
@@ -411,6 +410,8 @@ select:focus{
     justify-content:center;
 }
 .coffee-main{
+    padding-top:10vh;
+    padding-bottom:10vh;
     font-size: 1.8rem;
     font-weight: bold;
     line-height:1.7;
