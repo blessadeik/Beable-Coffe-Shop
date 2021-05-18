@@ -443,18 +443,19 @@ select:focus{
 }
 .testimonies .grid5{
     display: grid;
+    gap:35px;
     grid-template-columns: repeat(3, 1fr);
 }
 
 .testimonies .grid6{
     max-width:40% 60%;
-    height: 200px;
+    height:300px;
     display: grid;
     grid-template-columns:repeat(2, 1fr);
 }
 
 .testimonies img{
-    height: 180px;
+    height: 285px;
 }
 
 .img-card{
@@ -472,7 +473,7 @@ label{
 
 /* Utilities */
 .container{
-    max-width: 95%;
+    max-width: 80%;
     margin: 0 auto;
     overflow: hidden;
 }
@@ -635,6 +636,9 @@ label{
 /* Footer */
 footer{
     margin:0;
+    bottom: 0;
+    position:fixed;
+    width:100%;
     background-color: var(--primary-color);
     color: #fff;
     font-weight: bold;
