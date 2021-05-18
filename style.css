@@ -329,11 +329,13 @@ select:focus{
 }
 
 .gridconnect{
-    margin:auto;
+    overflow: hidden;
+    margin: auto;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    gap:10px;
-    width:100%;
+    gap:6px;
+    justify-content:center;
+    align-items:center;
 }
 .connect h2{
     text-align:center;
