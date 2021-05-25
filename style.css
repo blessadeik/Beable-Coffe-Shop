@@ -84,13 +84,14 @@ img{
 }
 
 .showcase h1{
-    font-size:40px;
+    font-size:1.2em;
     font-weight: bold;
 }
 
 .showcase p{
     margin: 20px 0;
     padding-bottom: 5px;
+    font-size: 0.8em;
 }
 
 .showcase .grid{
@@ -306,8 +307,8 @@ select:focus{
 
 .connect{
     margin: auto;
-    padding-top: 20px;
-    padding-bottom: 20px;
+    padding-top: 5px;
+    padding-bottom: 5px;
     background-color: #f1f4f8;
 }
 .connect ul{
@@ -355,25 +356,25 @@ select:focus{
 }
 
 .facebook{
-    width: 25px;
-    height: 25px;
+    width: 20px;
+    height: 20px;
     color:#325288;
 }
 
 .twitter{
-    width: 25px;
-    height: 25px;
+    width: 20px;
+    height: 20px;
     color:#161d6f;
 }
 .linkedin{
-    width: 25px;
-    height: 25px;
+    width: 20px;
+    height: 20px;
     color:#0278ae;
 }
 
 .github{
-    width: 25px;
-    height: 25px;
+    width: 20px;
+    height: 20px;
     color:black;
 }
 
@@ -427,16 +428,16 @@ select:focus{
 .coffee-main{
     padding-top:10vh;
     padding-bottom:10vh;
-    font-size: 1.8rem;
+    font-size: 1.6rem;
     font-weight: bold;
     line-height:1.7;
-    letter-spacing: 1.2rem;
+    letter-spacing: 1.25rem;
     color: #000000;
 
 }
 
 .coffee-content{
-    font-size:1.25rem;
+    font-size:1.1em;
     line-height: 2;
 }
 
@@ -467,13 +468,13 @@ select:focus{
 
 .testimonies .grid6{
     max-width:40% 60%;
-    height:300px;
+    height:200px;
     display: grid;
     grid-template-columns:repeat(2, 1fr);
 }
 
 .testimonies img{
-    height: 285px;
+    height: 185px;
 }
 
 .left{
