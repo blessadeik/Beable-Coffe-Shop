@@ -84,14 +84,14 @@ img{
 }
 
 .showcase h1{
-    font-size:1.2em;
+    font-size:1.3em;
     font-weight: bold;
 }
 
 .showcase p{
     margin: 20px 0;
     padding-bottom: 5px;
-    font-size: 0.8em;
+    font-size: 0.9em;
 }
 
 .showcase .grid{
@@ -125,6 +125,7 @@ img{
     padding:20px;
     z-index:100%;
     justify-self:flex-end;
+    font-size: 0.9em;
 }
 
 .showcase-form h2{
