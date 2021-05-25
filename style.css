@@ -476,7 +476,7 @@ select:focus{
     height: 285px;
 }
 
-.testimonies .left{
+.left{
     position: relative;
     animation-duration: 7s;
     animation-name:left;
@@ -485,7 +485,7 @@ select:focus{
     0% {right:300px;}
     25% {right:0px;}
 }
-.testimonies .right{
+.right{
     position:relative;
     animation-duration:7s;
     animation-name:right;
