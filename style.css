@@ -379,8 +379,10 @@ select:focus{
 
 /* coffee */
 .coffee{
+    margin:auto;
     padding-top: 100px;
     justify-content:center;
+    width: 80%;
 
 }
 
@@ -472,6 +474,25 @@ select:focus{
 
 .testimonies img{
     height: 285px;
+}
+
+.testimonies .left{
+    position: relative;
+    animation-duration: 5s;
+    animation-name:left;
+}
+@keyframes left{
+    0% {right:300px;}
+    25% {right:0px;}
+}
+.testimonies .right{
+    position:relative;
+    animation-duration:6s;
+    animation-name:right;
+}
+@keyframes right{
+    0% {left:300px;}
+    25% {left:0px;}
 }
 
 .img-card{
@@ -745,6 +766,7 @@ footer{
         grid-row:1;
     } */
 
+    
     .coffee .grid4{
         grid-template-columns: repeat(2, 1fr);
     }
