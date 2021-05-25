@@ -276,7 +276,8 @@ select:focus{
 
 /* Payment */
 .payment{
-    padding-top: 100px;
+    padding-top: 10vh;
+    padding-bottom:20vh;
 }
 .payment .flex{
     flex-wrap: wrap;
@@ -305,11 +306,21 @@ select:focus{
 
 .connect{
     margin: auto;
-    padding-top: 20vh;
-    padding-bottom: 20vh;
-    /* width: 60%; */
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background-color: #f1f4f8;
 }
-
+.connect ul{
+    margin:auto;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+}
+.connect li{
+    text-align:center;
+    text-decoration: none;
+    list-style-type:none;
+}
 .connect .social{
     background-color: white;
     border-radius:10px;
@@ -334,7 +345,6 @@ select:focus{
     margin: auto;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    gap:6px;
     justify-content:center;
     align-items:center;
 }
@@ -345,25 +355,25 @@ select:focus{
 }
 
 .facebook{
-    width: 40px;
-    height: 40px;
+    width: 25px;
+    height: 25px;
     color:#325288;
 }
 
 .twitter{
-    width: 40px;
-    height: 40px;
+    width: 25px;
+    height: 25px;
     color:#161d6f;
 }
 .linkedin{
-    width: 40px;
-    height: 40px;
+    width: 25px;
+    height: 25px;
     color:#0278ae;
 }
 
 .github{
-    width: 40px;
-    height: 40px;
+    width: 25px;
+    height: 25px;
     color:black;
 }
 
@@ -642,6 +652,53 @@ label{
 .p-5{
     margin: 3rem;
 }
+
+/* Subscribe */
+.subscribe{
+    margin:auto;
+    padding-bottom: 6vh;
+    text-align: center;
+    background-color:#810000;
+    padding: 60px;
+    color:#fff;
+
+}
+.subscribe h2{
+    height: 6vh;
+    font-size:2.3em;
+    font-weight: bold;
+
+}
+.subscribe p{
+    font-size:1.5em;
+}
+.subform{
+    margin: auto;
+    width:60%;
+}
+.subform input{
+    height:6vh;
+    width:70%;
+    font-size:1.1em;
+}
+.subform input:focus{
+    outline:none;
+    border:none;
+    border-bottom:3px solid #000;
+}
+button{
+    height:6vh;
+    padding: 10px;
+    font-size:1.2em;
+    font-weight: bold;
+    color: #fff;
+    background-color:#000;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+/* social icons */
+
 
 /* Footer */
 footer{
