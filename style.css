@@ -478,7 +478,7 @@ select:focus{
 
 .testimonies .left{
     position: relative;
-    animation-duration: 5s;
+    animation-duration: 7s;
     animation-name:left;
 }
 @keyframes left{
@@ -487,10 +487,10 @@ select:focus{
 }
 .testimonies .right{
     position:relative;
-    animation-duration:6s;
+    animation-duration:7s;
     animation-name:right;
 }
-@keyframes right{
+@keyframes right {
     0% {left:300px;}
     25% {left:0px;}
 }
